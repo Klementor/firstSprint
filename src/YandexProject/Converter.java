@@ -5,11 +5,11 @@ public class Converter {
     double caloriesByStep = 50;
     double inOneKilocalories = 1000;
 
-    void convert(int sumSteps){
-        double distance = sumSteps * step;
+    double getDistanceBySteps(int sumSteps){
+        return sumSteps * step;
+    }
+    double getKilocaloriesBySteps(int sumSteps){
         double calories = sumSteps * caloriesByStep;
-        double kilocalories = calories / inOneKilocalories;
-        System.out.println("Пройденная дистанция: "+ distance);
-        System.out.println("Сожженые килокалории: "+ kilocalories);
+        return calories / inOneKilocalories;
     }
 }
