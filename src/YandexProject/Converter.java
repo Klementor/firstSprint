@@ -1,5 +1,6 @@
 package YandexProject;
 
+
 public class Converter {
     double step = 0.75;
     double caloriesByStep = 50;
